@@ -1,0 +1,99 @@
+.jumbotron {
+    background-color: #003C70;
+    color:white ;
+    display: flex;
+}
+
+.header img {
+    float: center;
+    width: 400px;
+    
+  }
+  
+.header h1 {
+    position: relative;
+    text-align: center;
+  }
+
+.btn {
+  
+  color: white;
+  border-color:#003C70;
+}
+
+.card{
+  margin-left:10px;
+  border: 1px solid white;
+
+}
+
+.imageprofile{
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.imageprofile:hover{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.1);
+}
+
+.umnflix{
+  padding-top:30px;
+  font-size:80px;
+  padding-left:22%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.umnflix:hover{
+  color: yellow;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.3);
+}
+
+
+.container1{
+  padding:30px;
+}
+
+.container2{
+  margin-left:5%;
+}
+
+.table td img{
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.table td img:hover{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.1);
+}
+
+#buttonfavouritetv{
+  font-size: 20px;
+  padding: 20px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#buttonfavouritetv:hover{
+  background-color: rgb(119, 170, 252);
+  color : white;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+#buttonfavouritemovie{
+  font-size: 20px;
+  padding: 20px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#buttonfavouritemovie:hover{
+  background-color: rgb(119, 170, 252);
+  color : white;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}

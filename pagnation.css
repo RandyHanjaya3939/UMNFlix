@@ -1,0 +1,6 @@
+.pagination > li > a
+{
+    background-color: #003C70;
+    color: white;
+    border:solid black 1px;
+}

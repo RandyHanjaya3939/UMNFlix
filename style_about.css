@@ -1,0 +1,44 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+
+.profile-container{
+    padding-bottom: 20px;
+    margin-bottom:20px;
+    display: flex;
+}
+
+.col-profil{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #1a1919;
+    color:white;
+}
+
+.col-profil .photo img{
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+}
+
+.image{
+    height:100px;
+    width:100px;
+}
+
+.text-profil{
+    padding:10px;
+}
+
+.icon-profil{
+    Padding-left: 25px;
+}
+
+
+.footer{
+    margin-top:100px;
+    background-color: #003C70;
+}
+
+.footer div{
+    padding: 50px;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style_about.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+    </head>
+    <body style="background-color: #171717;">
+            <div class="jumbotron header">
+                <image src="umnflix.png"></image>
+                <h2 class="umnflix">UMNFlix</h2>
+            </div>
+            <nav class="navbar navbar-dark bg-primary navbar navbar-expand" style="position:relative; top:-35px;color:white; background-color:  #2321bf;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Movies</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="topratedm.html">Top Rated</a>
+                            <a class="dropdown-item" href="upcoming.html">Upcoming</a>
+                            <a class="dropdown-item" href="nowplay.html">Now Playing</a>
+                            <a class="dropdown-item" href="mpopular.html">Popular</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TV Shows</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="toptv.html">Top Rated</a>
+                            <a class="dropdown-item" href="tvonair.html">On the air</a>
+                            <a class="dropdown-item" href="tvtoday.html">Airing Today</a>
+                            <a class="dropdown-item" href="tvpopular.html">Popular</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="favorite.html">MyFav</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <h1 class="text-center" style="padding-bottom:80px; padding-top:50px; color:white;"><marquee scrollamount="25" direction="right">About Us</marquee></h1>
+            <div class="container profile-container">
+                <div class="col-sm-3">
+                    <div class="col-profil">
+                        <div class="photo">
+                            <img id="image" src="juan.jpg" class="img-responsive imageprofile" style="width:100%;"/>
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="text-center">
+                                    <h3 style="padding-left:10px; padding-right:10px;">Juan</h3>
+                                    <h4 style="padding-left:15px; padding-right:20px;">Teknik Komputer 2019</h4>
+                                </div>
+                                <div class="text-profil">
+                                    <p style="font-size: 14px; padding-left:10px; padding-right:10px;">
+                                        Berkuliah sambil bekerja merupakan motto hidup Juan.
+                                        Aktif di kelas merupakan salah satu nilai positif
+                                        yang Juan miliki. Ia merupakan orang yang jika tidak
+                                        mengerti maka dia akan bertanya. Juan merupakan orang yang 
+                                        jujur dalam segala hal dan asik dalam segala hal.
+                                    </p>
+                                </div>
+                                <div class="icon-profil">
+                                    <i class="fa fa-instagram" style="font-size:18px"></i> camejuanm</br>
+                                    <p style="font-size: 16px;">Line: camejuanm1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-profil">
+                        <div class="photo">
+                            <img id="image" src="Randy.jpg" class="img-responsive imageprofile"  style="width:100%;"/>
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="text-center">
+                                    <h3 style="padding-left:10px; padding-right:10px;">Randy Hanjaya</h3>
+                                    <h4 style="padding-left:15px; padding-right:20px;">Teknik Komputer 2019</h4>
+                                </div>
+                                <div class="text-profil">
+                                    <p style="font-size: 14px; padding-left:10px; padding-right:10px;">
+                                        Berkuliah sambil bermusik merupakan motto hidup Randy.
+                                        Cool dan beribawa merupakan salah satu nilai positif
+                                        yang Randy miliki. Ia merupakan orang yang aktif di chat
+                                        dan suka membantu orang lain. Randy merupakan orang yang
+                                        santai dalam segala hal.
+                                    </p>
+                                </div>
+                                <div class="icon-profil">
+                                    <i class="fa fa-instagram" style="font-size:18px"></i> arlon39</br>
+                                    <p style="font-size: 16px;">Line: randyh39</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-profil">
+                        <div class="photo">
+                            <img id="image" src="alvin.jpg" class="img-responsive imageprofile"  style="width:100%;"/>
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="text-center">
+                                    <h3 style="padding-left:10px; padding-right:10px;">Richard Alvin</h3>
+                                    <h4 style="padding-left:15px; padding-right:20px;">Teknik Komputer 2019</h4>
+                                </div>
+                                <div class="text-profil">
+                                    <p style="font-size: 14px; padding-left:10px; padding-right:10px;">
+                                        Berkuliah sambil main game merupakan motto hidup Alvin.
+                                        Aktif di kelas merupakan salah satu nilai positif
+                                        yang Alvin miliki. Ia merupakan orang yang suka mencari
+                                        kegiatan lain diluar kampus. Alvin merupakan orang yang 
+                                        cukup asyik dalam segala hal.
+                                    </p>
+                                </div>
+                                <div class="icon-profil">
+                                    <i class="fa fa-instagram" style="font-size:18px"></i> richardalvin36</br>
+                                    <p style="font-size: 16px;">Line: richardalvinp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-profil">
+                        <div class="photo">
+                            <img id="image" src="sion.jpg" class="img-responsive imageprofile"  style="width:100%;"/>
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="text-center">
+                                    <h3 style="padding-left:10px; padding-right:10px;">Sion Theodorus</h3>
+                                    <h4 style="padding-left:15px; padding-right:20px;">Teknik Komputer 2019</h4>
+                                </div>
+                                <div class="text-profil">
+                                    <p style="font-size: 14px; padding-left:10px; padding-right:10px;">
+                                        Berkuliah sambil mengajar merupakan motto hidup Sion.
+                                        Lucu merupakan salah satu nilai positif yang Sion miliki.
+                                        Ia merupakan orang yang mampu memberikan solusi disaat
+                                        menemui jalan buntu. Sion merupakan orang yang ceria dalam
+                                        segala hal.
+                                    </p>
+                                </div>
+                                <div class="icon-profil">
+                                    <i class="fa fa-instagram" style="font-size:18px"></i> stsd123</br>
+                                    <p style="font-size: 16px;">Line: overlordii</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div style="display: flex;">
+                    <div class="col-sm-4" style="color: white;">
+                        <h2 class="text-center">Ujian Akhir Semester</h2>
+                        <h3 class="text-center">PTI - Bu Fenina </h3>
+                    </div>
+                    <div class="col-sm-4" style="color: white;">
+                        <h3 class="text-center">Ujian Akhir Semester</h3>
+                        <h3 class="text-center">PTI Lab - Ko Jonathan & Ce Jennie</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <image src="logoumn.png" style="display:center; width:550px; height:250px;"></image>
+                        <p style="font-size: 30px; color:white;">Universitas Multimedia Nusantara
+                            Jl. Scientia Boulevard, Gading Serpong, Tangerang, Banten-15811 Indonesia</p>
+                    </div>
+                </div>
+                <div style="display: flex; padding:0; margin:0;">
+                    <div class="col-sm-3" style="padding:0; padding-left:5%; padding-bottom:10px;">
+                        <span class="text-white font-weight-bold">Powered by: </span><br>
+                        <img src="Asset 3.svg" class="img-fluid pt-3" style="max-width: fit-content;" alt="">
+                    </div>
+                    <div class="col-sm-6" style="margin:0; padding-top:0; color:white; font-size: 50px;">
+                        <h2 style="text-align: center;">Copyright: UMN_TK19_PTI_A_Kel3</h2>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

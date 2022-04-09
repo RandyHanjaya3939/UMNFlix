@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>UMNFlix</title>
+    </head>
+    <body style="background-color: #0f0f0f;">
+            <div class="jumbotron header">
+              <image src="umnflix.png"></image>
+              <h2 class="umnflix">UMNFlix</h2>
+            </div>
+            <nav class="navbar navbar-dark bg-primary navbar navbar-expand" style="position:relative; top:-35px;color:white; background-color:  #2321bf;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Movies</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="topratedm.html">Top Rated</a>
+                            <a class="dropdown-item" href="upcoming.html">Upcoming</a>
+                            <a class="dropdown-item" href="nowplay.html">Now Playing</a>
+                            <a class="dropdown-item" href="mpopular.html">Popular</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TV Shows</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="toptv.html">Top Rated</a>
+                            <a class="dropdown-item" href="tvonair.html">On the air</a>
+                            <a class="dropdown-item" href="tvtoday.html">Airing Today</a>
+                            <a class="dropdown-item" href="tvpopular.html">Popular</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="favorite.html">MyFav</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        <div class="container1">
+            <h1 id="header" class="text-center" style="margin-top:2.5%; margin-bottom: 2.5%; color:yellow;"><marquee scrollamount="25" direction="right">My Favourites Movies</marquee></h1>
+            <table id="Fmovie" class="table">
+                <thead style="color: white;">
+                  <tr>
+                    <th scope="col"> No </th>
+                    <th scope="col"></th>
+                    <th scope="col">Title</th>
+                    <th scope="col" >Overview</th>
+                    <th scope="col">Rating</th>
+                  </tr>
+                </thead>
+                <tbody style="color: white;">
+                </tbody>
+              </table>
+              <h1 class="text-center" style="color:white; margin-top:10%; margin-bottom: 2.5%; color: yellow;"><marquee scrollamount="25" direction="right">My Favourite TV Shows</marquee></h1>
+              <table id="Ftv" class="table">
+                <thead style="color: white;">
+                  <tr>
+                    <th scope="col"> No </th>
+                    <th scope="col"></th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Overview</th>
+                    <th scope="col">Rating</th>
+                  </tr>
+                </thead>
+                <tbody style="color: white;">
+                </tbody>
+              </table>
+        </div>
+        <footer class="footer py-3"style="background-color: #0d253f;">
+            <div class="container2">
+                <span class="text-white font-weight-bold">Powered by: </span><br>
+                <img src="Asset 3.svg" class="img-fluid pt-3" style="max-width: fit-content;" alt="">
+            </div>
+         </footer>
+    <script>
+        var nomor1 = 1;
+        var nomor2 = 1;
+        var terimamovie = JSON.parse(localStorage.getItem("simpanlinkmovie"));
+        for(var i = 0; i < terimamovie.length; i++){
+                $.getJSON(terimamovie[i], function(data){
+            var name = data.original_title;
+            var gambar = '<img src= "http://image.tmdb.org/t/p/w200/' + data.poster_path + '">';
+            var overview = data.overview;
+            var vote = data.popularity;
+            var masuk = '<tr><td>' + nomor1 + '</td><td>' + gambar + '</td><td>' + name + '</td><td>'+ overview +'</td><td>' + vote + '</td></tr>';
+                $("#Fmovie").append(masuk);
+                nomor1++;
+            })
+        }
+
+        var terimatv = JSON.parse(localStorage.getItem("simpanlinktv"));
+        for(var i = 0; i < terimatv.length; i++){
+                $.getJSON(terimatv[i], function(data){
+            var name = data.name;
+            var gambar = '<img src= "http://image.tmdb.org/t/p/w200/' + data.poster_path + '">';
+            var overview = data.overview;
+            var vote = data.popularity;
+            var masuk = '<tr><td>' + nomor2 + '</td><td>' + gambar + '</td><td>' + name + '</td><td>'+ overview +'</td><td>' + vote + '</td></tr>';
+                $("#Ftv").append(masuk);
+                nomor2++;
+            })
+        }
+    </script>
+</html>
