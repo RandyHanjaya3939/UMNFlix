@@ -3,3 +3,5 @@ Website yang dibuat untuk memenuhi persyaratan kelulusan dari matakuliah Pengena
 
 Website dibuat dengan memanfaatkan teknologi pengembang web seperti HTML, CSS, Javascript(Jquery), serta bootstrap.
 Pada website juga digunakan API MovieDb untuk memperoleh data-data mengenai perfilm'an.
+
+Kunjungi Website : https://umnflix2020.herokuapp.com/
