@@ -1,4 +1,4 @@
-#About UMNFlix
+# About UMNFlix
 Website yang dibuat untuk memenuhi persyaratan kelulusan dari matakuliah Pengenalan Teknologi & Internet
 
 Website dibuat dengan memanfaatkan teknologi pengembang web seperti HTML, CSS, Javascript(Jquery), serta bootstrap.
